@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Gestão de Coleta de Lixo Numa Cidade - T2G03: Código-Fonte de Interface.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Gestão de Coleta de Lixo Numa Cidade - T2G03
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Gerado por Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funções</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * Interface.h</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 17 de Abril de 2012</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: Cristiano Carvalheiro</span>
+<a name="l00006"></a>00006 <span class="comment"> *                      Daniel Teixeira</span>
+<a name="l00007"></a>00007 <span class="comment"> *                      Luis Guilherme Martins</span>
+<a name="l00008"></a>00008 <span class="comment"> * Description: Definicao da classe e respectivos atributos e metodos</span>
+<a name="l00009"></a>00009 <span class="comment"> *</span>
+<a name="l00010"></a>00010 <span class="comment"> */</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef INTERFACE_H_</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define INTERFACE_H_</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;Gestor.h&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;iomanip&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;conio.h&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00022"></a><a class="code" href="class_interface.html">00022</a> <span class="keyword">class </span><a class="code" href="class_interface.html" title="Classe responsavel pela interface e interacao com o utilizador.">Interface</a> {
+<a name="l00023"></a>00023 <span class="keyword">private</span>:
+<a name="l00024"></a>00024         <a class="code" href="class_gestor.html" title="Classe responsavel pela gestao do programa.">Gestor</a>* gestor;
+<a name="l00025"></a>00025         <span class="keywordtype">string</span> verticesFile;
+<a name="l00026"></a>00026         <span class="keywordtype">string</span> arestasFile;
+<a name="l00027"></a>00027         <span class="keywordtype">string</span> adjacentesFile;
+<a name="l00028"></a>00028         <span class="keyword">static</span> <span class="keywordtype">int</span> porta;
+<a name="l00029"></a>00029 
+<a name="l00033"></a>00033         <span class="keywordtype">boolean</span> carregarMapa();
+<a name="l00034"></a>00034 
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> gerirPontosRecolha();
+<a name="l00039"></a>00039 
+<a name="l00043"></a>00043         <span class="keywordtype">void</span> definirEstacao();
+<a name="l00044"></a>00044 
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> calcularRota();
+<a name="l00049"></a>00049 
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> gerirFrota();
+<a name="l00054"></a>00054 
+<a name="l00058"></a>00058         <span class="keyword">static</span> <span class="keywordtype">void</span> proximaPorta();
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="keyword">public</span>:
+<a name="l00061"></a>00061 
+<a name="l00065"></a><a class="code" href="class_interface.html#a4406d74c75bdfe150bf72be1f1cda8b1">00065</a>         <a class="code" href="class_interface.html#a4406d74c75bdfe150bf72be1f1cda8b1" title="Contrutor por defeito da classe Interface.">Interface</a>() {
+<a name="l00066"></a>00066                 verticesFile = <span class="stringliteral">&quot;nodes.txt&quot;</span>;
+<a name="l00067"></a>00067                 arestasFile = <span class="stringliteral">&quot;roads.txt&quot;</span>;
+<a name="l00068"></a>00068                 adjacentesFile = <span class="stringliteral">&quot;subroads.txt&quot;</span>;
+<a name="l00069"></a>00069         }
+<a name="l00070"></a>00070         ;
+<a name="l00071"></a>00071 
+<a name="l00075"></a>00075         <span class="keywordtype">void</span> <a class="code" href="class_interface.html#a417dd813f30bf427f6dd1fe57887a685" title="Funcao para mostrar a interface do menu principal do programa.">menuPrincipal</a>();
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 <span class="preprocessor">#endif </span><span class="comment">/* INTERFACE_H_ */</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quarta, 2 de Maio de 2012 04:52:53 para Gestão de Coleta de Lixo Numa Cidade - T2G03 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

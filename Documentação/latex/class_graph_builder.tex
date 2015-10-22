@@ -1,0 +1,59 @@
+\hypertarget{class_graph_builder}{\section{Referência à classe Graph\-Builder}
+\label{class_graph_builder}\index{Graph\-Builder@{Graph\-Builder}}
+}
+
+
+Classe que agrupa todas as funcoes necessarias a criacao do grafo.  
+
+
+
+
+{\ttfamily \#include $<$Graph\-Builder.\-h$>$}
+
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Rua}
+\begin{DoxyCompactList}\small\item\em Classe que agrupa todas as funcoes necessarias a criacao do objecto Rua. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_graph_builder_a5b010dc934c16aedf78177a017ef0209}{construir\-Grafo} (vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ \&vector\-Vertices, ifstream \&nos, ifstream \&ruas, ifstream \&sub\-Ruas)
+\begin{DoxyCompactList}\small\item\em Constroi o grafo completo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe que agrupa todas as funcoes necessarias a criacao do grafo. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_graph_builder_a5b010dc934c16aedf78177a017ef0209}{\index{Graph\-Builder@{Graph\-Builder}!construir\-Grafo@{construir\-Grafo}}
+\index{construir\-Grafo@{construir\-Grafo}!GraphBuilder@{Graph\-Builder}}
+\subsubsection[{construir\-Grafo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Graph\-Builder\-::construir\-Grafo} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Vertice} $\ast$ $>$ \&}]{vector\-Vertices, }
+\item[{ifstream \&}]{nos, }
+\item[{ifstream \&}]{ruas, }
+\item[{ifstream \&}]{sub\-Ruas}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_graph_builder_a5b010dc934c16aedf78177a017ef0209}
+
+
+Constroi o grafo completo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em vector\-Vertices} & Vector dos vertices \\
+\hline
+{\em nos} & Stream do ficheiro dos nos \\
+\hline
+{\em ruas} & Stream do ficheiro das ruas \\
+\hline
+{\em sub\-Ruas} & Stream do ficheiro das adjacencias \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Graph\-Builder.\-h\item 
+Graph\-Builder.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+\hypertarget{class_vertice}{\section{Referência à classe Vertice}
+\label{class_vertice}\index{Vertice@{Vertice}}
+}
+
+
+Classe que abstrai o objecto \hyperlink{class_vertice}{Vertice}.  
+
+
+
+
+{\ttfamily \#include $<$Vertice.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vertice_a9dd7cf987cddf248b9d4e3d31bf8822b}{\hyperlink{class_vertice_a9dd7cf987cddf248b9d4e3d31bf8822b}{Vertice} ()}\label{class_vertice_a9dd7cf987cddf248b9d4e3d31bf8822b}
+
+\begin{DoxyCompactList}\small\item\em Contrutor por defeito da classe \hyperlink{class_vertice}{Vertice}. \end{DoxyCompactList}\item 
+\hyperlink{class_vertice_a107fa033352ce81efe33b0e695c71cb4}{Vertice} (double, double)
+\begin{DoxyCompactList}\small\item\em Contrutor do vertice. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_vertice_acac820c5ad82c3b43d9cbf081fe2a200}{get\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o I\-D do vertice. \end{DoxyCompactList}\item 
+pair$<$ unsigned int, unsigned int $>$ \hyperlink{class_vertice_af69a0aae83769e8c96dffd301cee2c05}{get\-Coordenadas} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o par de coordenadas x e y do vertice. \end{DoxyCompactList}\item 
+bool \hyperlink{class_vertice_a6872ffde2b42147b80a5950e690fef42}{is\-Visitado} () const 
+\begin{DoxyCompactList}\small\item\em Verifica se o vertice ja foi visitado. \end{DoxyCompactList}\item 
+void \hyperlink{class_vertice_a3d05fb583a90a813ad39f46dec911e6c}{set\-Visitado} (bool)
+\begin{DoxyCompactList}\small\item\em Define o novo estado de visitado do \hyperlink{class_vertice}{Vertice}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_aresta}{Aresta} $>$\-::iterator \hyperlink{class_vertice_a3ea398756dcfde3c7bfd492b2e7aed90}{get\-Aresta\-It} ()
+\begin{DoxyCompactList}\small\item\em Devolve o iterador para o primeiro elemento do vector de arestas. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_aresta}{Aresta} $>$\-::iterator \hyperlink{class_vertice_ac1e8e0915d31103d97e4631b151e97f1}{get\-Aresta\-Fim} ()
+\begin{DoxyCompactList}\small\item\em Devolve o iterador para o ultimo elemento do vector de arestas. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_vertice_a3582db768077cd58cc2f79ed140439ff}{get\-Nro\-Arestas} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o numero de arestas que saem do vertice. \end{DoxyCompactList}\item 
+\hyperlink{class_aresta}{Aresta} \hyperlink{class_vertice_a9ce9712d4b23b8accb4b723ae8239b5f}{get\-Aresta} (unsigned int) const 
+\begin{DoxyCompactList}\small\item\em Devolve uma aresta especifica. \end{DoxyCompactList}\item 
+double \hyperlink{class_vertice_aa77e652d3fe5ab79e5eb45937d4494b3}{get\-Tamanho\-Aresta} (unsigned int) const 
+\begin{DoxyCompactList}\small\item\em Devolve o tamanho da aresta seleccionada. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_vertice_ad4ff073be2f07c4046da26cfab132805}{get\-Id\-Aresta} (unsigned int) const 
+\begin{DoxyCompactList}\small\item\em Devolve o I\-D da aresta que liga o vertice actual ao vertice de destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vertice_a620e1196abf64949bc73f1445de46f10}{double {\bfseries pos\-X}}\label{class_vertice_a620e1196abf64949bc73f1445de46f10}
+
+\item 
+\hypertarget{class_vertice_a7b470bff99aa4f6cb17ef876d2c93c1a}{double {\bfseries pos\-Y}}\label{class_vertice_a7b470bff99aa4f6cb17ef876d2c93c1a}
+
+\item 
+\hypertarget{class_vertice_a830de82c31e960d5c212853fb94078cb}{vector$<$ \hyperlink{class_aresta}{Aresta} $>$ {\bfseries arestas}}\label{class_vertice_a830de82c31e960d5c212853fb94078cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vertice_aab46923179138f99eb77d517f8f5c398}{class {\bfseries Graph\-\_\-\-Builder}}\label{class_vertice_aab46923179138f99eb77d517f8f5c398}
+
+\item 
+\hypertarget{class_vertice_ac3e8d01b9438b5b366d0e19ff5473e5b}{class {\bfseries Gestor}}\label{class_vertice_ac3e8d01b9438b5b366d0e19ff5473e5b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe que abstrai o objecto \hyperlink{class_vertice}{Vertice}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_vertice_a107fa033352ce81efe33b0e695c71cb4}{\index{Vertice@{Vertice}!Vertice@{Vertice}}
+\index{Vertice@{Vertice}!Vertice@{Vertice}}
+\subsubsection[{Vertice}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertice\-::\-Vertice} (
+\begin{DoxyParamCaption}
+\item[{double}]{posix, }
+\item[{double}]{posiy}
+\end{DoxyParamCaption}
+)}}\label{class_vertice_a107fa033352ce81efe33b0e695c71cb4}
+
+
+Contrutor do vertice. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em posix} & Posicao do vertice no eixo dos xx \\
+\hline
+{\em posiy} & Posicao do vertice no eixo dos yy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_vertice_a9ce9712d4b23b8accb4b723ae8239b5f}{\index{Vertice@{Vertice}!get\-Aresta@{get\-Aresta}}
+\index{get\-Aresta@{get\-Aresta}!Vertice@{Vertice}}
+\subsubsection[{get\-Aresta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Aresta} {\bf Vertice\-::get\-Aresta} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{indice}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_a9ce9712d4b23b8accb4b723ae8239b5f}
+
+
+Devolve uma aresta especifica. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em indice} & Indice da aresta pretendida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+\hyperlink{class_aresta}{Aresta} que sai do vertice 
+\end{DoxyReturn}
+\hypertarget{class_vertice_ac1e8e0915d31103d97e4631b151e97f1}{\index{Vertice@{Vertice}!get\-Aresta\-Fim@{get\-Aresta\-Fim}}
+\index{get\-Aresta\-Fim@{get\-Aresta\-Fim}!Vertice@{Vertice}}
+\subsubsection[{get\-Aresta\-Fim}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Aresta} $>$\-::iterator {\bf Vertice\-::get\-Aresta\-Fim} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vertice_ac1e8e0915d31103d97e4631b151e97f1}
+
+
+Devolve o iterador para o ultimo elemento do vector de arestas. 
+
+\begin{DoxyReturn}{Retorna}
+Iterador para o ultimo elemento do vector de arestas 
+\end{DoxyReturn}
+\hypertarget{class_vertice_a3ea398756dcfde3c7bfd492b2e7aed90}{\index{Vertice@{Vertice}!get\-Aresta\-It@{get\-Aresta\-It}}
+\index{get\-Aresta\-It@{get\-Aresta\-It}!Vertice@{Vertice}}
+\subsubsection[{get\-Aresta\-It}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Aresta} $>$\-::iterator {\bf Vertice\-::get\-Aresta\-It} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vertice_a3ea398756dcfde3c7bfd492b2e7aed90}
+
+
+Devolve o iterador para o primeiro elemento do vector de arestas. 
+
+\begin{DoxyReturn}{Retorna}
+Iterador para o primeiro elemento do vector de arestas 
+\end{DoxyReturn}
+\hypertarget{class_vertice_af69a0aae83769e8c96dffd301cee2c05}{\index{Vertice@{Vertice}!get\-Coordenadas@{get\-Coordenadas}}
+\index{get\-Coordenadas@{get\-Coordenadas}!Vertice@{Vertice}}
+\subsubsection[{get\-Coordenadas}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ unsigned int, unsigned int $>$ {\bf Vertice\-::get\-Coordenadas} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_af69a0aae83769e8c96dffd301cee2c05}
+
+
+Devolve o par de coordenadas x e y do vertice. 
+
+\begin{DoxyReturn}{Retorna}
+Coordenadas do vertice 
+\end{DoxyReturn}
+\hypertarget{class_vertice_acac820c5ad82c3b43d9cbf081fe2a200}{\index{Vertice@{Vertice}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!Vertice@{Vertice}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Vertice\-::get\-I\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_acac820c5ad82c3b43d9cbf081fe2a200}
+
+
+Devolve o I\-D do vertice. 
+
+\begin{DoxyReturn}{Retorna}
+I\-D do vertice 
+\end{DoxyReturn}
+\hypertarget{class_vertice_ad4ff073be2f07c4046da26cfab132805}{\index{Vertice@{Vertice}!get\-Id\-Aresta@{get\-Id\-Aresta}}
+\index{get\-Id\-Aresta@{get\-Id\-Aresta}!Vertice@{Vertice}}
+\subsubsection[{get\-Id\-Aresta}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Vertice\-::get\-Id\-Aresta} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{vdest}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_ad4ff073be2f07c4046da26cfab132805}
+
+
+Devolve o I\-D da aresta que liga o vertice actual ao vertice de destino. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em vdest} & \hyperlink{class_vertice}{Vertice} de destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+I\-D da aresta 
+\end{DoxyReturn}
+\hypertarget{class_vertice_a3582db768077cd58cc2f79ed140439ff}{\index{Vertice@{Vertice}!get\-Nro\-Arestas@{get\-Nro\-Arestas}}
+\index{get\-Nro\-Arestas@{get\-Nro\-Arestas}!Vertice@{Vertice}}
+\subsubsection[{get\-Nro\-Arestas}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Vertice\-::get\-Nro\-Arestas} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_a3582db768077cd58cc2f79ed140439ff}
+
+
+Devolve o numero de arestas que saem do vertice. 
+
+\begin{DoxyReturn}{Retorna}
+Numero de arestas que saem do vertice 
+\end{DoxyReturn}
+\hypertarget{class_vertice_aa77e652d3fe5ab79e5eb45937d4494b3}{\index{Vertice@{Vertice}!get\-Tamanho\-Aresta@{get\-Tamanho\-Aresta}}
+\index{get\-Tamanho\-Aresta@{get\-Tamanho\-Aresta}!Vertice@{Vertice}}
+\subsubsection[{get\-Tamanho\-Aresta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Vertice\-::get\-Tamanho\-Aresta} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{idaresta}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_aa77e652d3fe5ab79e5eb45937d4494b3}
+
+
+Devolve o tamanho da aresta seleccionada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em idaresta} & I\-D da aresta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Tamanho da aresta seleccionada 
+\end{DoxyReturn}
+\hypertarget{class_vertice_a6872ffde2b42147b80a5950e690fef42}{\index{Vertice@{Vertice}!is\-Visitado@{is\-Visitado}}
+\index{is\-Visitado@{is\-Visitado}!Vertice@{Vertice}}
+\subsubsection[{is\-Visitado}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Vertice\-::is\-Visitado} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_vertice_a6872ffde2b42147b80a5950e690fef42}
+
+
+Verifica se o vertice ja foi visitado. 
+
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se o vertice foi visitado, F\-A\-L\-S\-E em caso contrario 
+\end{DoxyReturn}
+\hypertarget{class_vertice_a3d05fb583a90a813ad39f46dec911e6c}{\index{Vertice@{Vertice}!set\-Visitado@{set\-Visitado}}
+\index{set\-Visitado@{set\-Visitado}!Vertice@{Vertice}}
+\subsubsection[{set\-Visitado}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Vertice\-::set\-Visitado} (
+\begin{DoxyParamCaption}
+\item[{bool}]{visit}
+\end{DoxyParamCaption}
+)}}\label{class_vertice_a3d05fb583a90a813ad39f46dec911e6c}
+
+
+Define o novo estado de visitado do \hyperlink{class_vertice}{Vertice}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em visit} & Novo estado de visitado (booleano) \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Vertice.\-h\item 
+Vertice.\-cpp\end{DoxyCompactItemize}

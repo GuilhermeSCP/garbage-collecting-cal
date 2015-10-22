@@ -1,0 +1,135 @@
+\hypertarget{class_algoritmo}{\section{Referência à classe Algoritmo}
+\label{class_algoritmo}\index{Algoritmo@{Algoritmo}}
+}
+
+
+Classe possui o algoritmo utilizado.  
+
+
+
+
+{\ttfamily \#include $<$Algoritmo.\-h$>$}
+
+\subsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_algoritmo_ad15a3a5845441a80b46970319edad089}{custo\-Aresta} (unsigned int Ind\-Ori\-V, unsigned int Ind\-Des\-V, vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ \&vertices)
+\begin{DoxyCompactList}\small\item\em Calcula o custo entre dois vertices. \end{DoxyCompactList}\item 
+static vector$<$ unsigned int $>$ \hyperlink{class_algoritmo_a18eba39cbde146bcda1e86a562cc8935}{get\-Caminho} (const unsigned int \&origem, const unsigned int \&destino, int $\ast$$\ast$\&array\-Caminho, int $\ast$$\ast$\&Array\-Caminhos\-Aux, vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ \&vertices)
+\begin{DoxyCompactList}\small\item\em Calcula o caminho mais curto entre vertices. \end{DoxyCompactList}\item 
+static void \hyperlink{class_algoritmo_a3f0db20d251dda5f96b2e33a6fee00f8}{floyd\-Warshall\-Caminho\-Mais\-Curto} (int $\ast$$\ast$\&array\-Caminho, int $\ast$$\ast$\&array\-Caminho\-Aux, vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ \&vertices)
+\begin{DoxyCompactList}\small\item\em Constroi matrizes usadas pelo algoritmo de Floyd-\/\-Warshall. \end{DoxyCompactList}\item 
+static vector$<$ unsigned int $>$ \hyperlink{class_algoritmo_a39bc793c9a0d71b78f2b3d4b31f522ae}{procura\-Em\-Profundidade} (unsigned int origem, vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ \&vertices)
+\begin{DoxyCompactList}\small\item\em Visita todos os vertices acessiveis apartir da origem usando a procura em profundidade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe possui o algoritmo utilizado. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_algoritmo_ad15a3a5845441a80b46970319edad089}{\index{Algoritmo@{Algoritmo}!custo\-Aresta@{custo\-Aresta}}
+\index{custo\-Aresta@{custo\-Aresta}!Algoritmo@{Algoritmo}}
+\subsubsection[{custo\-Aresta}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Algoritmo\-::custo\-Aresta} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{Ind\-Ori\-V, }
+\item[{unsigned int}]{Ind\-Des\-V, }
+\item[{vector$<$ {\bf Vertice} $\ast$ $>$ \&}]{vertices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_algoritmo_ad15a3a5845441a80b46970319edad089}
+
+
+Calcula o custo entre dois vertices. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Ind\-Ori\-V} & I\-D do vertice de origem \\
+\hline
+{\em Ind\-Des\-V} & I\-D do vertice de destino \\
+\hline
+{\em vertices} & Vector de vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O valor do custo entre dois vertices 
+\end{DoxyReturn}
+\hypertarget{class_algoritmo_a3f0db20d251dda5f96b2e33a6fee00f8}{\index{Algoritmo@{Algoritmo}!floyd\-Warshall\-Caminho\-Mais\-Curto@{floyd\-Warshall\-Caminho\-Mais\-Curto}}
+\index{floyd\-Warshall\-Caminho\-Mais\-Curto@{floyd\-Warshall\-Caminho\-Mais\-Curto}!Algoritmo@{Algoritmo}}
+\subsubsection[{floyd\-Warshall\-Caminho\-Mais\-Curto}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Algoritmo\-::floyd\-Warshall\-Caminho\-Mais\-Curto} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$\&}]{array\-Caminho, }
+\item[{int $\ast$$\ast$\&}]{array\-Caminho\-Aux, }
+\item[{vector$<$ {\bf Vertice} $\ast$ $>$ \&}]{vertices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_algoritmo_a3f0db20d251dda5f96b2e33a6fee00f8}
+
+
+Constroi matrizes usadas pelo algoritmo de Floyd-\/\-Warshall. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em array\-Caminho} & Matriz de adjacencias \\
+\hline
+{\em array\-Caminho\-Aux} & Matrix auxiliar \\
+\hline
+{\em vertices} & Vector de vertices \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_algoritmo_a18eba39cbde146bcda1e86a562cc8935}{\index{Algoritmo@{Algoritmo}!get\-Caminho@{get\-Caminho}}
+\index{get\-Caminho@{get\-Caminho}!Algoritmo@{Algoritmo}}
+\subsubsection[{get\-Caminho}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ unsigned int $>$ {\bf Algoritmo\-::get\-Caminho} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{origem, }
+\item[{const unsigned int \&}]{destino, }
+\item[{int $\ast$$\ast$\&}]{array\-Caminho, }
+\item[{int $\ast$$\ast$\&}]{Array\-Caminhos\-Aux, }
+\item[{vector$<$ {\bf Vertice} $\ast$ $>$ \&}]{vertices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_algoritmo_a18eba39cbde146bcda1e86a562cc8935}
+
+
+Calcula o caminho mais curto entre vertices. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & I\-D do vertice de origem \\
+\hline
+{\em destino} & I\-D do vertice de destino \\
+\hline
+{\em array\-Caminho} & Matriz de adjacencias \\
+\hline
+{\em Array\-Caminhos\-Aux} & Matriz auxiliar de caminhos \\
+\hline
+{\em vertices} & Vector de vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Vector com o I\-D de todos os vertices visitados 
+\end{DoxyReturn}
+\hypertarget{class_algoritmo_a39bc793c9a0d71b78f2b3d4b31f522ae}{\index{Algoritmo@{Algoritmo}!procura\-Em\-Profundidade@{procura\-Em\-Profundidade}}
+\index{procura\-Em\-Profundidade@{procura\-Em\-Profundidade}!Algoritmo@{Algoritmo}}
+\subsubsection[{procura\-Em\-Profundidade}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ unsigned int $>$ {\bf Algoritmo\-::procura\-Em\-Profundidade} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{origem, }
+\item[{vector$<$ {\bf Vertice} $\ast$ $>$ \&}]{vertices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_algoritmo_a39bc793c9a0d71b78f2b3d4b31f522ae}
+
+
+Visita todos os vertices acessiveis apartir da origem usando a procura em profundidade. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & I\-D do vertice usado como origem using a depth first search (used to determine accessible vertexes) \\
+\hline
+{\em vertices} & Vector de vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Vector com os I\-Ds de todos os vertices acessiveis 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Algoritmo.\-h\item 
+Algoritmo.\-cpp\end{DoxyCompactItemize}

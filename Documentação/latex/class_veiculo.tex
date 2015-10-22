@@ -1,0 +1,200 @@
+\hypertarget{class_veiculo}{\section{Referência à classe Veiculo}
+\label{class_veiculo}\index{Veiculo@{Veiculo}}
+}
+
+
+Classe que agrupa todas as funcoes necessarias a criacao do objecto \hyperlink{class_veiculo}{Veiculo}.  
+
+
+
+
+{\ttfamily \#include $<$Veiculo.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_veiculo_aafab27708a2639bc83a4c3721e57d196}{\hyperlink{class_veiculo_aafab27708a2639bc83a4c3721e57d196}{Veiculo} ()}\label{class_veiculo_aafab27708a2639bc83a4c3721e57d196}
+
+\begin{DoxyCompactList}\small\item\em Construtor da classe \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_veiculo_a262beacd60d26ee80769022c7c761d0e}{get\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o I\-D do \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+void \hyperlink{class_veiculo_ac92dc4b87fdadfd6b28f44e01c19e23e}{set\-I\-D} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em Altera o I\-D do \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+double \hyperlink{class_veiculo_ac2565051ae08d343dc5b1c58ec4376f4}{get\-Distancia\-Percorrida} () const 
+\begin{DoxyCompactList}\small\item\em devolve a distancia percorrida pelo \hyperlink{class_veiculo}{Veiculo} \end{DoxyCompactList}\item 
+void \hyperlink{class_veiculo_ab11ffc8cc36fa474dfa1bb7487b224d3}{set\-Distancia\-Percorrida} (double distancia)
+\begin{DoxyCompactList}\small\item\em Altera a distancia percorrida pelo \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_veiculo_a81b404875383f452de361230537baa2e}{get\-Paragens} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o numero de paragens do \hyperlink{class_veiculo}{Veiculo}, ou seja, o numero de Vertices visitados pelo \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+void \hyperlink{class_veiculo_a010fac29bd8d7d9c5a2cb819db824f27}{set\-Paragens} (unsigned int paragens)
+\begin{DoxyCompactList}\small\item\em Altera o numero de paragens do \hyperlink{class_veiculo}{Veiculo}, ou seja, o numero de Vertices visitados pelo \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+vector$<$ unsigned int $>$ \hyperlink{class_veiculo_a2346fad0c329ffb4b060e58fb6895ab4}{get\-Caminho} () const 
+\begin{DoxyCompactList}\small\item\em Devolve um vector com os I\-Ds do vertices percorridos pelo \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+void \hyperlink{class_veiculo_a1864227d84aa349f9eb5ab5d442ba4b8}{set\-Caminho} (vector$<$ unsigned int $>$ caminho)
+\begin{DoxyCompactList}\small\item\em Altera o caminho a ser percorrido pelo \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_veiculo_aee35ffe966838ce1231973455eb2158f}{is\-Valido} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o estado do \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\item 
+void \hyperlink{class_veiculo_accbff72edbbb887b7847943e01db92f8}{set\-Valido} (bool valido)
+\begin{DoxyCompactList}\small\item\em Altera o status do \hyperlink{class_veiculo}{Veiculo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe que agrupa todas as funcoes necessarias a criacao do objecto \hyperlink{class_veiculo}{Veiculo}. 
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_veiculo_a2346fad0c329ffb4b060e58fb6895ab4}{\index{Veiculo@{Veiculo}!get\-Caminho@{get\-Caminho}}
+\index{get\-Caminho@{get\-Caminho}!Veiculo@{Veiculo}}
+\subsubsection[{get\-Caminho}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ unsigned int $>$ {\bf Veiculo\-::get\-Caminho} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_veiculo_a2346fad0c329ffb4b060e58fb6895ab4}
+
+
+Devolve um vector com os I\-Ds do vertices percorridos pelo \hyperlink{class_veiculo}{Veiculo}. 
+
+\begin{DoxyReturn}{Retorna}
+Caminho percorrido pelo \hyperlink{class_veiculo}{Veiculo} 
+\end{DoxyReturn}
+\hypertarget{class_veiculo_ac2565051ae08d343dc5b1c58ec4376f4}{\index{Veiculo@{Veiculo}!get\-Distancia\-Percorrida@{get\-Distancia\-Percorrida}}
+\index{get\-Distancia\-Percorrida@{get\-Distancia\-Percorrida}!Veiculo@{Veiculo}}
+\subsubsection[{get\-Distancia\-Percorrida}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Veiculo\-::get\-Distancia\-Percorrida} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_veiculo_ac2565051ae08d343dc5b1c58ec4376f4}
+
+
+devolve a distancia percorrida pelo \hyperlink{class_veiculo}{Veiculo} 
+
+\begin{DoxyReturn}{Retorna}
+distancia\-Percorrida 
+\end{DoxyReturn}
+\hypertarget{class_veiculo_a262beacd60d26ee80769022c7c761d0e}{\index{Veiculo@{Veiculo}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!Veiculo@{Veiculo}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Veiculo\-::get\-I\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_veiculo_a262beacd60d26ee80769022c7c761d0e}
+
+
+Devolve o I\-D do \hyperlink{class_veiculo}{Veiculo}. 
+
+\begin{DoxyReturn}{Retorna}
+I\-D do \hyperlink{class_veiculo}{Veiculo} 
+\end{DoxyReturn}
+\hypertarget{class_veiculo_a81b404875383f452de361230537baa2e}{\index{Veiculo@{Veiculo}!get\-Paragens@{get\-Paragens}}
+\index{get\-Paragens@{get\-Paragens}!Veiculo@{Veiculo}}
+\subsubsection[{get\-Paragens}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Veiculo\-::get\-Paragens} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_veiculo_a81b404875383f452de361230537baa2e}
+
+
+Devolve o numero de paragens do \hyperlink{class_veiculo}{Veiculo}, ou seja, o numero de Vertices visitados pelo \hyperlink{class_veiculo}{Veiculo}. 
+
+\begin{DoxyReturn}{Retorna}
+Numero de paragens 
+\end{DoxyReturn}
+\hypertarget{class_veiculo_aee35ffe966838ce1231973455eb2158f}{\index{Veiculo@{Veiculo}!is\-Valido@{is\-Valido}}
+\index{is\-Valido@{is\-Valido}!Veiculo@{Veiculo}}
+\subsubsection[{is\-Valido}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Veiculo\-::is\-Valido} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_veiculo_aee35ffe966838ce1231973455eb2158f}
+
+
+Devolve o estado do \hyperlink{class_veiculo}{Veiculo}. 
+
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se o \hyperlink{class_veiculo}{Veiculo} for utilizado, F\-A\-L\-S\-E em caso contrario 
+\end{DoxyReturn}
+\hypertarget{class_veiculo_a1864227d84aa349f9eb5ab5d442ba4b8}{\index{Veiculo@{Veiculo}!set\-Caminho@{set\-Caminho}}
+\index{set\-Caminho@{set\-Caminho}!Veiculo@{Veiculo}}
+\subsubsection[{set\-Caminho}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Veiculo\-::set\-Caminho} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ unsigned int $>$}]{caminho}
+\end{DoxyParamCaption}
+)}}\label{class_veiculo_a1864227d84aa349f9eb5ab5d442ba4b8}
+
+
+Altera o caminho a ser percorrido pelo \hyperlink{class_veiculo}{Veiculo}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em caminho} & Novo caminho \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_veiculo_ab11ffc8cc36fa474dfa1bb7487b224d3}{\index{Veiculo@{Veiculo}!set\-Distancia\-Percorrida@{set\-Distancia\-Percorrida}}
+\index{set\-Distancia\-Percorrida@{set\-Distancia\-Percorrida}!Veiculo@{Veiculo}}
+\subsubsection[{set\-Distancia\-Percorrida}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Veiculo\-::set\-Distancia\-Percorrida} (
+\begin{DoxyParamCaption}
+\item[{double}]{distancia}
+\end{DoxyParamCaption}
+)}}\label{class_veiculo_ab11ffc8cc36fa474dfa1bb7487b224d3}
+
+
+Altera a distancia percorrida pelo \hyperlink{class_veiculo}{Veiculo}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em distancia} & Nova distancia percorrida \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_veiculo_ac92dc4b87fdadfd6b28f44e01c19e23e}{\index{Veiculo@{Veiculo}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!Veiculo@{Veiculo}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Veiculo\-::set\-I\-D} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_veiculo_ac92dc4b87fdadfd6b28f44e01c19e23e}
+
+
+Altera o I\-D do \hyperlink{class_veiculo}{Veiculo}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & Novo I\-D \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_veiculo_a010fac29bd8d7d9c5a2cb819db824f27}{\index{Veiculo@{Veiculo}!set\-Paragens@{set\-Paragens}}
+\index{set\-Paragens@{set\-Paragens}!Veiculo@{Veiculo}}
+\subsubsection[{set\-Paragens}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Veiculo\-::set\-Paragens} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{paragens}
+\end{DoxyParamCaption}
+)}}\label{class_veiculo_a010fac29bd8d7d9c5a2cb819db824f27}
+
+
+Altera o numero de paragens do \hyperlink{class_veiculo}{Veiculo}, ou seja, o numero de Vertices visitados pelo \hyperlink{class_veiculo}{Veiculo}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em paragens} & Novo numero de paragens \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_veiculo_accbff72edbbb887b7847943e01db92f8}{\index{Veiculo@{Veiculo}!set\-Valido@{set\-Valido}}
+\index{set\-Valido@{set\-Valido}!Veiculo@{Veiculo}}
+\subsubsection[{set\-Valido}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Veiculo\-::set\-Valido} (
+\begin{DoxyParamCaption}
+\item[{bool}]{valido}
+\end{DoxyParamCaption}
+)}}\label{class_veiculo_accbff72edbbb887b7847943e01db92f8}
+
+
+Altera o status do \hyperlink{class_veiculo}{Veiculo}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em valido} & Novo estado de validade do \hyperlink{class_veiculo}{Veiculo} \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Veiculo.\-h\item 
+Veiculo.\-cpp\end{DoxyCompactItemize}

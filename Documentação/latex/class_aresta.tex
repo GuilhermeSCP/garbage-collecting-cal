@@ -1,0 +1,130 @@
+\hypertarget{class_aresta}{\section{Referência à classe Aresta}
+\label{class_aresta}\index{Aresta@{Aresta}}
+}
+
+
+Classe que abstrai o objecto \hyperlink{class_aresta}{Aresta}.  
+
+
+
+
+{\ttfamily \#include $<$Aresta.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_aresta_a2324054916462e3a1b7a4ddde65513f0}{\hyperlink{class_aresta_a2324054916462e3a1b7a4ddde65513f0}{Aresta} ()}\label{class_aresta_a2324054916462e3a1b7a4ddde65513f0}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defeito da classe \hyperlink{class_aresta}{Aresta}. \end{DoxyCompactList}\item 
+\hyperlink{class_aresta_a9c6a5906dc26229ac475f4df507256c2}{Aresta} (string nom, double tam, \hyperlink{class_vertice}{Vertice} $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \hyperlink{class_aresta}{Aresta}. \end{DoxyCompactList}\item 
+double \hyperlink{class_aresta_a85489edb5e22a759b0043e7264e0bccd}{get\-Tamanho} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o tamanho da aresta. \end{DoxyCompactList}\item 
+\hyperlink{class_vertice}{Vertice} $\ast$ \hyperlink{class_aresta_a89ef99a56fff9ef20542c59d33f3a8b7}{get\-Destino} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o vertice de destino da aresta. \end{DoxyCompactList}\item 
+string \hyperlink{class_aresta_af9e7806edf5bb7bd851ab94aa28a53bd}{get\-Nome} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o nome da aresta. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_aresta_a1a64f8b4e612fb7c851afe415462b6d0}{get\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Devolve o I\-D da aresta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_aresta_ac871974ed6fa568dbf19b840bc79b47b}{class {\bfseries Graph\-Builder}}\label{class_aresta_ac871974ed6fa568dbf19b840bc79b47b}
+
+\item 
+\hypertarget{class_aresta_ac3e8d01b9438b5b366d0e19ff5473e5b}{class {\bfseries Gestor}}\label{class_aresta_ac3e8d01b9438b5b366d0e19ff5473e5b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe que abstrai o objecto \hyperlink{class_aresta}{Aresta}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_aresta_a9c6a5906dc26229ac475f4df507256c2}{\index{Aresta@{Aresta}!Aresta@{Aresta}}
+\index{Aresta@{Aresta}!Aresta@{Aresta}}
+\subsubsection[{Aresta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Aresta\-::\-Aresta} (
+\begin{DoxyParamCaption}
+\item[{string}]{nom, }
+\item[{double}]{tam, }
+\item[{{\bf Vertice} $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}\label{class_aresta_a9c6a5906dc26229ac475f4df507256c2}
+
+
+Construtor da classe \hyperlink{class_aresta}{Aresta}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nom} & Nome da aresta \\
+\hline
+{\em tam} & Tamanho da aresta \\
+\hline
+{\em dest} & Apontador para o vertice de destino \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_aresta_a89ef99a56fff9ef20542c59d33f3a8b7}{\index{Aresta@{Aresta}!get\-Destino@{get\-Destino}}
+\index{get\-Destino@{get\-Destino}!Aresta@{Aresta}}
+\subsubsection[{get\-Destino}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertice} $\ast$ {\bf Aresta\-::get\-Destino} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_aresta_a89ef99a56fff9ef20542c59d33f3a8b7}
+
+
+Devolve o vertice de destino da aresta. 
+
+\begin{DoxyReturn}{Retorna}
+Apontador para o vertice de destino 
+\end{DoxyReturn}
+\hypertarget{class_aresta_a1a64f8b4e612fb7c851afe415462b6d0}{\index{Aresta@{Aresta}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!Aresta@{Aresta}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Aresta\-::get\-I\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_aresta_a1a64f8b4e612fb7c851afe415462b6d0}
+
+
+Devolve o I\-D da aresta. 
+
+\begin{DoxyReturn}{Retorna}
+I\-D da aresta 
+\end{DoxyReturn}
+\hypertarget{class_aresta_af9e7806edf5bb7bd851ab94aa28a53bd}{\index{Aresta@{Aresta}!get\-Nome@{get\-Nome}}
+\index{get\-Nome@{get\-Nome}!Aresta@{Aresta}}
+\subsubsection[{get\-Nome}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Aresta\-::get\-Nome} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_aresta_af9e7806edf5bb7bd851ab94aa28a53bd}
+
+
+Devolve o nome da aresta. 
+
+\begin{DoxyReturn}{Retorna}
+Nome da aresta 
+\end{DoxyReturn}
+\hypertarget{class_aresta_a85489edb5e22a759b0043e7264e0bccd}{\index{Aresta@{Aresta}!get\-Tamanho@{get\-Tamanho}}
+\index{get\-Tamanho@{get\-Tamanho}!Aresta@{Aresta}}
+\subsubsection[{get\-Tamanho}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Aresta\-::get\-Tamanho} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_aresta_a85489edb5e22a759b0043e7264e0bccd}
+
+
+Devolve o tamanho da aresta. 
+
+\begin{DoxyReturn}{Retorna}
+Tamanho da aresta 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Aresta.\-h\item 
+Aresta.\-cpp\end{DoxyCompactItemize}

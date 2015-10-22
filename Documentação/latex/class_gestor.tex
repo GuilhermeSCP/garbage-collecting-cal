@@ -1,0 +1,257 @@
+\hypertarget{class_gestor}{\section{Referência à classe Gestor}
+\label{class_gestor}\index{Gestor@{Gestor}}
+}
+
+
+Classe responsavel pela gestao do programa.  
+
+
+
+
+{\ttfamily \#include $<$Gestor.\-h$>$}
+
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_gestor_a63ab3a451dcedb416578c35b5d57aca4}{\hyperlink{class_gestor_a63ab3a451dcedb416578c35b5d57aca4}{Gestor} ()}\label{class_gestor_a63ab3a451dcedb416578c35b5d57aca4}
+
+\begin{DoxyCompactList}\small\item\em Contrutor por defeito da classe \hyperlink{class_gestor}{Gestor}. \end{DoxyCompactList}\item 
+\hyperlink{class_gestor_a6eb5f552606a9727338f08567af780c2}{Gestor} (string nodes, string roads, string subroads, int porta)
+\begin{DoxyCompactList}\small\item\em Contrutor da classe gestor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gestor_a6c3b21acf2962ecf159136db3a8bd715}{adicionar\-Pontode\-Recolha} (unsigned int vertice)
+\begin{DoxyCompactList}\small\item\em Funcao para adicionar um novo ponto de recolha. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gestor_ac380d3e83b9fcaea5b91fe805445ed90}{remove\-Pontode\-Recolha} (unsigned int vertice)
+\begin{DoxyCompactList}\small\item\em Funcao para remover um ponto de recolha. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gestor_aa8372dcadceed12c0879ae0192a0807b}{set\-Lixeira} (unsigned int vertice)
+\begin{DoxyCompactList}\small\item\em Funcao para definir a estacao de recolha. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_gestor_af16fb9e19400257f96fc0faddd5b51e9}{get\-Vertice\-Max\-I\-D} () const 
+\begin{DoxyCompactList}\small\item\em Funcao que retorna o maior id de vertices existente. \end{DoxyCompactList}\item 
+\hypertarget{class_gestor_a1e41facfae61e3217ada47155d927bd3}{void \hyperlink{class_gestor_a1e41facfae61e3217ada47155d927bd3}{actualizar\-Grafo} ()}\label{class_gestor_a1e41facfae61e3217ada47155d927bd3}
+
+\begin{DoxyCompactList}\small\item\em Funcao que actualiza o estado do grafo. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestor_a266d40d2550b75f8cabf7107e7865f74}{adicionar\-Veiculo} (unsigned int quant)
+\begin{DoxyCompactList}\small\item\em Funcao que adiciona 1 ou mais camioes a frota. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gestor_a71b6932c0de11f652c0201cfb1aadfe6}{remove\-Veiculo} (unsigned int quant)
+\begin{DoxyCompactList}\small\item\em Funcao que remove 1 ou mais camioes a frota. \end{DoxyCompactList}\item 
+\hypertarget{class_gestor_a68730dd19a6abd889c9958b5c41c85d6}{void \hyperlink{class_gestor_a68730dd19a6abd889c9958b5c41c85d6}{calcular\-Rota} ()}\label{class_gestor_a68730dd19a6abd889c9958b5c41c85d6}
+
+\begin{DoxyCompactList}\small\item\em Funcao que calcula todas as rotas dos camioes para recolher o lixo. \end{DoxyCompactList}\item 
+\hypertarget{class_gestor_afb4de6dbc2a4cf17fa22ca89cc80d918}{void \hyperlink{class_gestor_afb4de6dbc2a4cf17fa22ca89cc80d918}{mostra\-Caminhos} ()}\label{class_gestor_afb4de6dbc2a4cf17fa22ca89cc80d918}
+
+\begin{DoxyCompactList}\small\item\em Funcao responsavel pela animacao dos caminhos na A\-P\-I graphviewer. \end{DoxyCompactList}\item 
+\hypertarget{class_gestor_ad493cbd9874ffd6d68e1cf35661e1304}{void \hyperlink{class_gestor_ad493cbd9874ffd6d68e1cf35661e1304}{mostra\-Stats} ()}\label{class_gestor_ad493cbd9874ffd6d68e1cf35661e1304}
+
+\begin{DoxyCompactList}\small\item\em Funcao que mostra na consola as estatisticas da rota calculada. \end{DoxyCompactList}\item 
+\hypertarget{class_gestor_a4d4e9889e86624ba727dd15c171f8c4f}{void \hyperlink{class_gestor_a4d4e9889e86624ba727dd15c171f8c4f}{calcula\-Stats} ()}\label{class_gestor_a4d4e9889e86624ba727dd15c171f8c4f}
+
+\begin{DoxyCompactList}\small\item\em Funcao que calcula as estatisticas da rota calculada. \end{DoxyCompactList}\item 
+void \hyperlink{class_gestor_a9e3984e723a88a62b9daf0ac92b5d9a0}{remove\-Vertice\-Repetido} (vector$<$ unsigned int $>$ verts, unsigned int camiao)
+\begin{DoxyCompactList}\small\item\em Funcao que remove os vertices repetidos dos proximos camioes a utilizar. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_gestor_a36767333693fcde43dc7a8bede31e6b2}{get\-Num\-Camioes} ()
+\begin{DoxyCompactList}\small\item\em Funcao que retorna o numero de camieos que existem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_gestor_a36621d23bfbb03528e02156d6db98d1f}{vector$<$ \hyperlink{class_vertice}{Vertice} $\ast$ $>$ {\bfseries vertices}}\label{class_gestor_a36621d23bfbb03528e02156d6db98d1f}
+
+\item 
+\hypertarget{class_gestor_a163c7e5d2f461326bd5278569b2c50e0}{vector$<$ \hyperlink{class_veiculo}{Veiculo} $>$ {\bfseries camioes}}\label{class_gestor_a163c7e5d2f461326bd5278569b2c50e0}
+
+\item 
+\hypertarget{class_gestor_ac31b8b9f6a11e8ad3c3a4ee4b24ef1f9}{int $\ast$$\ast$ {\bfseries caminho}}\label{class_gestor_ac31b8b9f6a11e8ad3c3a4ee4b24ef1f9}
+
+\item 
+\hypertarget{class_gestor_ac8ddb489e5cba88a19768dd8a9d2aa11}{int $\ast$$\ast$ {\bfseries caminho\-Aux}}\label{class_gestor_ac8ddb489e5cba88a19768dd8a9d2aa11}
+
+\item 
+\hypertarget{class_gestor_a0c6417a41d99047374e7e16a57ff72a7}{Graph\-Viewer $\ast$ {\bfseries grafo\-Viewer}}\label{class_gestor_a0c6417a41d99047374e7e16a57ff72a7}
+
+\item 
+\hypertarget{class_gestor_aed174a242efffcdef8423c03bf975f9b}{unsigned int {\bfseries lixeira}}\label{class_gestor_aed174a242efffcdef8423c03bf975f9b}
+
+\item 
+\hypertarget{class_gestor_a0ca89c4359875a8545be97dab8e3b045}{vector$<$ unsigned int $>$ {\bfseries pontos\-Acessiveis}}\label{class_gestor_a0ca89c4359875a8545be97dab8e3b045}
+
+\item 
+\hypertarget{class_gestor_a983d0d701e6b6a01669f5d07a2be07eb}{vector$<$ unsigned int $>$ {\bfseries pontos\-De\-Recolha}}\label{class_gestor_a983d0d701e6b6a01669f5d07a2be07eb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Classe responsavel pela gestao do programa. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{class_gestor_a6eb5f552606a9727338f08567af780c2}{\index{Gestor@{Gestor}!Gestor@{Gestor}}
+\index{Gestor@{Gestor}!Gestor@{Gestor}}
+\subsubsection[{Gestor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gestor\-::\-Gestor} (
+\begin{DoxyParamCaption}
+\item[{string}]{nodes, }
+\item[{string}]{roads, }
+\item[{string}]{subroads, }
+\item[{int}]{porta}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a6eb5f552606a9727338f08567af780c2}
+
+
+Contrutor da classe gestor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nodes} & Nome do ficheiro de vertices \\
+\hline
+{\em roads} & Nome do ficheiro de ruas \\
+\hline
+{\em subroads} & Nome do ficheiro de adjacencias \\
+\hline
+{\em porta} & Porta a usar \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{class_gestor_a6c3b21acf2962ecf159136db3a8bd715}{\index{Gestor@{Gestor}!adicionar\-Pontode\-Recolha@{adicionar\-Pontode\-Recolha}}
+\index{adicionar\-Pontode\-Recolha@{adicionar\-Pontode\-Recolha}!Gestor@{Gestor}}
+\subsubsection[{adicionar\-Pontode\-Recolha}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Gestor\-::adicionar\-Pontode\-Recolha} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{vertice}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a6c3b21acf2962ecf159136db3a8bd715}
+
+
+Funcao para adicionar um novo ponto de recolha. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em vertice} & Numero do vertice para passar a ponto de recolha \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se conseguir passar o vertice a ponto de recolha, F\-A\-L\-S\-E se acontecer o contrario 
+\end{DoxyReturn}
+\hypertarget{class_gestor_a266d40d2550b75f8cabf7107e7865f74}{\index{Gestor@{Gestor}!adicionar\-Veiculo@{adicionar\-Veiculo}}
+\index{adicionar\-Veiculo@{adicionar\-Veiculo}!Gestor@{Gestor}}
+\subsubsection[{adicionar\-Veiculo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Gestor\-::adicionar\-Veiculo} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{quant}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a266d40d2550b75f8cabf7107e7865f74}
+
+
+Funcao que adiciona 1 ou mais camioes a frota. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em quant} & Quantidade de camioes a serem adicionados \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_gestor_a36767333693fcde43dc7a8bede31e6b2}{\index{Gestor@{Gestor}!get\-Num\-Camioes@{get\-Num\-Camioes}}
+\index{get\-Num\-Camioes@{get\-Num\-Camioes}!Gestor@{Gestor}}
+\subsubsection[{get\-Num\-Camioes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Gestor\-::get\-Num\-Camioes} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a36767333693fcde43dc7a8bede31e6b2}
+
+
+Funcao que retorna o numero de camieos que existem. 
+
+\begin{DoxyReturn}{Retorna}
+Numero de camioes existentes na frota 
+\end{DoxyReturn}
+\hypertarget{class_gestor_af16fb9e19400257f96fc0faddd5b51e9}{\index{Gestor@{Gestor}!get\-Vertice\-Max\-I\-D@{get\-Vertice\-Max\-I\-D}}
+\index{get\-Vertice\-Max\-I\-D@{get\-Vertice\-Max\-I\-D}!Gestor@{Gestor}}
+\subsubsection[{get\-Vertice\-Max\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Gestor\-::get\-Vertice\-Max\-I\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_gestor_af16fb9e19400257f96fc0faddd5b51e9}
+
+
+Funcao que retorna o maior id de vertices existente. 
+
+\begin{DoxyReturn}{Retorna}
+Maior id existente 
+\end{DoxyReturn}
+\hypertarget{class_gestor_ac380d3e83b9fcaea5b91fe805445ed90}{\index{Gestor@{Gestor}!remove\-Pontode\-Recolha@{remove\-Pontode\-Recolha}}
+\index{remove\-Pontode\-Recolha@{remove\-Pontode\-Recolha}!Gestor@{Gestor}}
+\subsubsection[{remove\-Pontode\-Recolha}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Gestor\-::remove\-Pontode\-Recolha} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{vertice}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_ac380d3e83b9fcaea5b91fe805445ed90}
+
+
+Funcao para remover um ponto de recolha. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em vertice} & Numero do vertice para deixar de ser ponto de recolha \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se conseguir remover o ponto de recolha, F\-A\-L\-S\-E se acontecer o contrario 
+\end{DoxyReturn}
+\hypertarget{class_gestor_a71b6932c0de11f652c0201cfb1aadfe6}{\index{Gestor@{Gestor}!remove\-Veiculo@{remove\-Veiculo}}
+\index{remove\-Veiculo@{remove\-Veiculo}!Gestor@{Gestor}}
+\subsubsection[{remove\-Veiculo}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Gestor\-::remove\-Veiculo} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{quant}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a71b6932c0de11f652c0201cfb1aadfe6}
+
+
+Funcao que remove 1 ou mais camioes a frota. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em quant} & Quantidade de camioes a serem removidos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se conseguir remover a quant camioes a frota, F\-A\-L\-S\-E se acontecer o contrario 
+\end{DoxyReturn}
+\hypertarget{class_gestor_a9e3984e723a88a62b9daf0ac92b5d9a0}{\index{Gestor@{Gestor}!remove\-Vertice\-Repetido@{remove\-Vertice\-Repetido}}
+\index{remove\-Vertice\-Repetido@{remove\-Vertice\-Repetido}!Gestor@{Gestor}}
+\subsubsection[{remove\-Vertice\-Repetido}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Gestor\-::remove\-Vertice\-Repetido} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ unsigned int $>$}]{verts, }
+\item[{unsigned int}]{camiao}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_a9e3984e723a88a62b9daf0ac92b5d9a0}
+
+
+Funcao que remove os vertices repetidos dos proximos camioes a utilizar. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em verts} & Vector de vertices a analisar \\
+\hline
+{\em camiao} & Indice do camiao que esta a ser utilizado \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_gestor_aa8372dcadceed12c0879ae0192a0807b}{\index{Gestor@{Gestor}!set\-Lixeira@{set\-Lixeira}}
+\index{set\-Lixeira@{set\-Lixeira}!Gestor@{Gestor}}
+\subsubsection[{set\-Lixeira}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Gestor\-::set\-Lixeira} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{vertice}
+\end{DoxyParamCaption}
+)}}\label{class_gestor_aa8372dcadceed12c0879ae0192a0807b}
+
+
+Funcao para definir a estacao de recolha. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em vertice} & Numero do vertice para passar a ser estacao de recolha \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+T\-R\-U\-E se conseguir passar o vertice a estacao de recolha, F\-A\-L\-S\-E se acontecer o contrario 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+Gestor.\-h\item 
+Gestor.\-cpp\end{DoxyCompactItemize}
